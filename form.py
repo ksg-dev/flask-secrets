@@ -1,6 +1,6 @@
 from flask_wtf import FlaskForm
-from wtforms import StringField
+from wtforms import StringField, PasswordField
 
 class MyForm(FlaskForm):
     email = StringField("email")
-    password = StringField("password")
+    password = PasswordField("password")
