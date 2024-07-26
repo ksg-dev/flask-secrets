@@ -1,5 +1,6 @@
 from flask import Flask, render_template
 from form import MyForm
+from flask_bootstrap import Bootstrap5
 
 
 
@@ -20,6 +21,7 @@ This will install the packages from requirements.txt for this project.
 
 app = Flask(__name__)
 app.secret_key = "bananas"
+bootstrap = Bootstrap5(app)
 
 @app.route("/")
 def home():
